@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer components {
+  .section-padding {
+    padding: 1.25rem 15%;
+  }
+
+  .projects-img-style {
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+  }
+  
+  .hover-fade {
+      cursor: pointer;
+      transition: color 0.3s ease;
+  }
+  
+  .hover-fade:hover {
+    opacity: 0.5;
+  }
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
