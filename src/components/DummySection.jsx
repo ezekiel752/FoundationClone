@@ -6,6 +6,13 @@ export const DummySection = () => {
     const dummyData = loremData;
     const { pathname} = useLocation();
     const isServicesPage = pathname === "/services";
+    const isServicesFooter = (
+      <>
+        Learn More{" "}
+        <span className="material-symbols-outlined text">trending_flat</span>
+      </>
+    );
+
 
     return (
       <>
@@ -21,7 +28,7 @@ export const DummySection = () => {
               <DataCard
                 key={lorem.id}
                 body={lorem.body}
-                footer={lorem.footer}
+                footer={isServicesPage ? isServicesFooter : lorem.footer}
               />
             ))}
           </div>
